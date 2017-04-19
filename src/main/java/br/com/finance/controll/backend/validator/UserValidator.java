@@ -1,8 +1,8 @@
 package br.com.finance.controll.backend.validator;
 
-public class StudentValidator {
+public class UserValidator {
 	
-	public void validateStudy(){
+	public void validate(){
 		System.out.println("Validating Student...");
 	}
 }

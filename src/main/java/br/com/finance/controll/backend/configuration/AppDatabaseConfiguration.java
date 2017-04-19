@@ -16,7 +16,7 @@ import java.util.Properties;
  * Class reponsible to create the beans related to Database configuration.
  */
 @Configuration
-public class SgaDatabaseConfiguration {
+public class AppDatabaseConfiguration {
 
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
