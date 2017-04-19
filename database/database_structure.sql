@@ -6,3 +6,10 @@ create table users(
     
     constraint users_pk primary key (id)
 );
+
+create table flags(
+    id serial not null,
+    company varchar(50) not null,
+    
+    constraint flags_pk primary key (id)
+);
