@@ -22,6 +22,30 @@
       "revId": "fdf96d4093f1ca9aa8306de8db888a8016fb5916",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a5eba932_ffa4693d",
+        "filename": "database/database_structure.sql",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1011012
+      },
+      "writtenOn": "2017-04-20T15:48:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5d3ccd55_32eece79",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 4
+      },
+      "revId": "fdf96d4093f1ca9aa8306de8db888a8016fb5916",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
