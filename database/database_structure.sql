@@ -7,6 +7,8 @@ create table users(
     constraint users_pk primary key (id)
 );
 
+insert into users (name, username, password) values ('Edilson', 'edilsonjustiniano', 'test');
+
 create table flags(
     id serial not null,
     company varchar(50) not null,
