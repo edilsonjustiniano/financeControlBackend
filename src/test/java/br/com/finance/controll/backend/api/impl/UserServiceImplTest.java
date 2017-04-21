@@ -31,9 +31,9 @@ public class UserServiceImplTest {
 
 	@Test
 	public void shouldListStudents() {
-		// Given Test 123
+		// Given
 		List<User> students = buildStudentList();
-		given(studentBusiness.listUsers()).willReturn(null);
+		given(studentBusiness.listUsers()).willReturn(students);
 
 		// When
 		List<User> result = userServiceImpl.listUsers();
@@ -44,10 +44,12 @@ public class UserServiceImplTest {
 
 	private List<User> buildStudentList() {
 		ArrayList<User> students = new ArrayList<User>();
+
 		User student = new User();
 		student.setId(23L);
 		student.setName("Sandro");
 		students.add(student);
+
 		return students;
 	}
 
