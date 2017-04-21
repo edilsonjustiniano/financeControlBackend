@@ -44,10 +44,12 @@ public class UserServiceImplTest {
 
 	private List<User> buildStudentList() {
 		ArrayList<User> students = new ArrayList<User>();
+
 		User student = new User();
 		student.setId(23L);
 		student.setName("Sandro");
 		students.add(student);
+
 		return students;
 	}
 
