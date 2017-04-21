@@ -43,7 +43,7 @@ public class UserServiceImplTest {
 	}
 
 	private List<User> buildStudentList() {
-		ArrayList<User> students = new ArrayList<User>();
+		ArrayList<User> students = new ArrayList<>();
 
 		User student = new User();
 		student.setId(23L);
