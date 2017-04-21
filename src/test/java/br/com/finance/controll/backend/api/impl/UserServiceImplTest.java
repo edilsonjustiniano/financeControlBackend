@@ -31,7 +31,7 @@ public class UserServiceImplTest {
 
 	@Test
 	public void shouldListStudents() {
-		// Given
+		// Given Test
 		List<User> students = buildStudentList();
 		given(studentBusiness.listUsers()).willReturn(students);
 
