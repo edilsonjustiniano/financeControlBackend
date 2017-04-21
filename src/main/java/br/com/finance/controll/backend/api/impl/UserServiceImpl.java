@@ -19,14 +19,15 @@ import br.com.finance.controll.backend.validator.UserValidator;
 
 @Component
 @Path("/users")
-public class UserServiceImpl implements UserService{
-	
+public class UserServiceImpl implements UserService {
+
 	@Autowired
 	private UserValidator userValidator;
-	
+
 	@Autowired
 	private UserBusiness userBusiness;
 
+	@Override
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<User> listUsers() {
@@ -37,6 +38,7 @@ public class UserServiceImpl implements UserService{
 		return userBusiness.listUsers();
 	}
 
+	@Override
 	@POST
 	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.APPLICATION_JSON)

@@ -64,18 +64,20 @@ public class User {
 
 	@Override
 	public boolean equals(Object obj) {
-		if (obj == null)
+		if (obj == null) {
 			return false;
-		if (getClass() != obj.getClass())
+		}
+		if (getClass() != obj.getClass()) {
 			return false;
+		}
 		final User other = (User) obj;
 		return Objects.equal(this.id, other.id) && Objects.equal(this.name, other.name)
-				&& Objects.equal(this.username, other.username) && Objects.equal(this.password, other.password);
+		        && Objects.equal(this.username, other.username) && Objects.equal(this.password, other.password);
 	}
 
 	@Override
 	public String toString() {
 		return MoreObjects.toStringHelper(this).add("id", id).add("name", name).add("username", username)
-				.add("password", password).toString();
+		        .add("password", password).toString();
 	}
 }

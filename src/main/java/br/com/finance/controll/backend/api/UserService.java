@@ -7,6 +7,6 @@ import br.com.finance.controll.backend.model.User;
 public interface UserService {
 
 	List<User> listUsers();
-	
+
 	void createUser(User user);
 }

@@ -1,13 +1,13 @@
 package br.com.finance.controll.backend.dao;
 
-import org.springframework.stereotype.Repository;
-
 import java.lang.reflect.ParameterizedType;
 import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
+
+import org.springframework.stereotype.Repository;
 
 @Repository
 public class GenericDao<T, PK> {
@@ -42,7 +42,7 @@ public class GenericDao<T, PK> {
 	private Class<?> getTypeClass() {
 
 		Class<?> clazz = (Class<?>) ((ParameterizedType) this.getClass().getGenericSuperclass())
-				.getActualTypeArguments()[0];
+		        .getActualTypeArguments()[0];
 
 		return clazz;
 	}

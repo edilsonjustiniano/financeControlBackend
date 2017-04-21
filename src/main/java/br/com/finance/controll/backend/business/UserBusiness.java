@@ -2,10 +2,10 @@ package br.com.finance.controll.backend.business;
 
 import java.util.List;
 
+import org.springframework.transaction.annotation.Transactional;
+
 import br.com.finance.controll.backend.dao.UserDao;
 import br.com.finance.controll.backend.model.User;
-
-import org.springframework.transaction.annotation.Transactional;
 
 @Transactional
 public class UserBusiness {
@@ -15,8 +15,8 @@ public class UserBusiness {
 	public UserBusiness(UserDao userDao) {
 		this.userDao = userDao;
 	}
-	
-	public List<User> listUsers(){
+
+	public List<User> listUsers() {
 		return userDao.getAll();
 	}
 
