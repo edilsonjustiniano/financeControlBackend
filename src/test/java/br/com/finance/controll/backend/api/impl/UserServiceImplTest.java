@@ -33,7 +33,7 @@ public class UserServiceImplTest {
 	public void shouldListStudents() {
 		// Given
 		List<User> students = buildStudentList();
-		given(studentBusiness.listUsers()).willReturn(null);
+		given(studentBusiness.listUsers()).willReturn(students);
 
 		// When
 		List<User> result = userServiceImpl.listUsers();
